@@ -64,6 +64,28 @@ a, .btn-link {
     }
 
 .imageThumbnail {
-    height: 200px;
+    height: 250px;
     width: auto;
+}
+
+.spinner {
+    border: 5px solid silver;
+    border-top: 5px solid darkblue;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 700ms linear infinite;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
 }
